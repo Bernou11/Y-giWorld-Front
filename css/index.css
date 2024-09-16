@@ -1,0 +1,88 @@
+:root {
+    background-color: #ecf5ff;
+    font-size: 63%;
+}
+* {           /* appliqué partout */
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;    /*style ecriture */
+    margin: 0; /*supprime les marges */
+    padding: 0;  /* supprime les espacements internes */
+    color: #333;
+  }
+
+
+  h1,
+  h2,    /*appliqué pour h1 h2 h3 h4 */
+  h3,
+  h4 {
+    margin-bottom: 1rem; 
+  }
+
+  h1 {
+    font-size: 5.6rem;
+    color: #56a5eb;
+    margin-bottom: 5rem;
+  }
+
+  h2 {
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+  }
+  
+  h3 {
+    font-size: 2.8rem;
+    font-weight: 500;
+  }
+  
+  .container {
+    width: 100vw; /* occupe toute la latgeur */
+    height: 100vh;  /* same*/
+    display: flex; /*. Cela permet de disposer les éléments enfants (les éléments à l'intérieur de .container) en utilisant le modèle de boîte flexible (Flexbox).*/
+    justify-content: center; /*centre horizontalement les éléments à l'intérieur du conteneur*/
+    align-items: center; /*verticalement */
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  .container > * {
+    width: 100%;
+  }
+  #image{
+    width: 300;
+    height: 210;
+  }  
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .flex-center {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+/* BUTTONS */
+.btn {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    width: 20rem;
+    text-align: center;
+    border: 0.1rem solid #56a5eb;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #56a5eb;
+    background-color: white;
+  }
