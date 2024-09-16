@@ -48,10 +48,7 @@
   .container > * {
     width: 100%;
   }
-  #image{
-    width: 300;
-    height: 210;
-  }  
+ 
   .flex-column {
     display: flex;
     flex-direction: column;
