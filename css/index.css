@@ -1,5 +1,5 @@
 :root {
-    background-color: #f3c2f0;
+    background-color: #f3f0ff;
     font-size: 63%;
 }
 * {           /* appliqué partout */
@@ -20,7 +20,7 @@
 
   h1 {
     font-size: 5.6rem;
-    color: #000000;
+    color: #b1a1ed;
     margin-bottom: 4rem;
     font-family: cursive;
   }
@@ -87,11 +87,11 @@
     padding: 1rem 0;
     width: 20rem;
     text-align: center;
-    border: 0.1rem solid #e61f93;
+    border: 0.1rem solid #7353e7;
     margin-bottom: 1rem;
     text-decoration: none;
-    color: black;
-    background-color: #d2ffe6;
+    color: #b1a1ed;
+    background-color: #dbefe1;
   }
   .btn:hover {
     cursor: pointer;
