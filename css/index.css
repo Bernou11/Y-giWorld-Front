@@ -1,5 +1,5 @@
 :root {
-    background-color: #ecf5ff;
+    background-color: #f3c2f0;
     font-size: 63%;
 }
 * {           /* appliqué partout */
@@ -20,8 +20,9 @@
 
   h1 {
     font-size: 5.6rem;
-    color: #56a5eb;
-    margin-bottom: 5rem;
+    color: #000000;
+    margin-bottom: 4rem;
+    font-family: cursive;
   }
 
   h2 {
@@ -36,18 +37,27 @@
   }
   
   .container {
-    width: 100vw; /* occupe toute la latgeur */
-    height: 100vh;  /* same*/
-    display: flex; /*. Cela permet de disposer les éléments enfants (les éléments à l'intérieur de .container) en utilisant le modèle de boîte flexible (Flexbox).*/
-    justify-content: center; /*centre horizontalement les éléments à l'intérieur du conteneur*/
-    align-items: center; /*verticalement */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: flex-start; /* Aligne les éléments en haut */
     max-width: 80rem;
-    margin: 0 auto;
+    margin: 50px auto 0 auto;
     padding: 2rem;
-  }
+}
   .container > * {
     width: 100%;
+    margin-top: 20px;
   }
+  .image {
+    width: 400px;
+    height: 300px;
+    margin-top: 10px; /* Moins d'espace en haut pour rapprocher l'image du haut de la page */
+    margin-bottom: 10px; /* Un peu d'espace en dessous */
+    
+}
+
  
   .flex-column {
     display: flex;
@@ -77,9 +87,21 @@
     padding: 1rem 0;
     width: 20rem;
     text-align: center;
-    border: 0.1rem solid #56a5eb;
+    border: 0.1rem solid #e61f93;
     margin-bottom: 1rem;
     text-decoration: none;
-    color: #56a5eb;
-    background-color: white;
+    color: black;
+    background-color: #d2ffe6;
+  }
+  .btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 #e61f93(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+  }
+  
+  .btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
   }
